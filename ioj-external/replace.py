@@ -12,7 +12,6 @@ def replace(filename):
 		content = re.sub(r'\t', '&nbsp;&nbsp;&nbsp;&nbsp;', content)
 		content = re.sub(r'"', '&quot;', content)
 	with open(filename,'w') as f:
-		f.write('Hello isdcoj!');
 		f.write(content)
 
 if __name__ == '__main__':
