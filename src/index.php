@@ -1,6 +1,6 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <?php
-session_start();
 if(isset($_SESSION['valid_user']))
 {
 	$userid = $_SESSION['valid_user'];
@@ -12,7 +12,6 @@ if(isset($_SESSION['valid_user']))
 <html lang="en">
 <title>训练平台 四川大学信息安全与网络攻防协会</title>
 <?php
-	session_start();
 	require('../header.inc.php');
 	$_home_class='""';$_blog_class='""';$_game_class='""';$_train_class='"active"';$_about_class='"dropdown"';
 	require_once('../navi.inc.php');
